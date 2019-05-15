@@ -1,0 +1,19 @@
+{
+  "name": "que-veo-hoy-recursos",
+  "version": "1.0.0",
+  "description": "que veo hoy tp ",
+  "main": "index.js",
+  "scripts": {
+    "start": "node servidor/servidor",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fabian lamas",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "node": "^10.15.2"
+  }
+}
