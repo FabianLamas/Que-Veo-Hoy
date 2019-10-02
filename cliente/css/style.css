@@ -133,7 +133,7 @@ img {
 	height: 53px;
 }
 
-/*-----*/
+
 
 .paso-2-links {
 	display: block;
@@ -577,7 +577,6 @@ img {
 	opacity: 1;
 }
 
-/*-------*/
 
 .grid-pager .boton-pagina {
 	border: 0;
@@ -642,8 +641,6 @@ img {
 .error h1 {
 	font-size: 60px;
 }
-
-/*////////// RESPONSIVE ////////////*/
 
 .paso-2 {
 	display: none;

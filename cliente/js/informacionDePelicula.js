@@ -1,11 +1,10 @@
 (function() {
     var server = 'http://localhost:8080';
     var params = location.search
-    //se obtiene el id de la película de la cuál tenemos que obtener la información
     var id = (params.split("="))[1];
 
     var controladorInformacionDePelicula = new ControladorInformacionDePelicula();
-    //se obtiene la información de la película
+    
     controladorInformacionDePelicula.obtenerPelicula(id);
 
     function ControladorInformacionDePelicula() {
@@ -31,13 +30,11 @@
                 }
                 $(".actores").html(actores_string.slice(0, -2));
             },
-            //esta función recibe como parámetro el id de una película y se encarga de pedirle al backend la información de la misma.
             this.obtenerPelicula = function(id) {
                 var self = this;
                 $.getJSON(server + "/peliculas/" + id,
                     function(data) {
                         self.cargarDetalle(data);
-                        //en el caso de que no se encuentre la pelicula, redirigir a la pagina de error
                     }).fail(function() {
                     window.location.href = "error.html";
                 });

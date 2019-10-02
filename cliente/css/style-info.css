@@ -103,8 +103,6 @@ html,body {
 	background-color: #f3f3f3;
 }
 
-/*////////// RESPONSIVE ////////////*/
-
 @media only screen and (max-width: 640px) {
 
 	.btn-volver {
@@ -123,7 +121,7 @@ html,body {
 	.rank {
 		top: 6px;
 		font-size: 18px;
-		font-weight: /*bold*/;
+		font-weight: bold;
 	}
 
 	.rank:before {
